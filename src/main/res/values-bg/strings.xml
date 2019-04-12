@@ -59,6 +59,7 @@
     <string name="block">Блокирай</string>
     <string name="unblock">Отблокирай</string>
     <string name="save">Запази</string>
+    <string name="ok">Добре</string>
     <string name="crash_report_title">Pix-Art Messenger се разби</string>
     <string name="crash_report_message">Чрез изпращането на следи от стакове помагате на продължаващото развитие на Pix-Art Messenger n <b> Предупреждение: </b> Това ще използва вашия XMPP акаунт, за да изпрати проследяването на стека на разработчика.</string>
     <string name="send_now">Изпрати сега</string>
@@ -85,6 +86,7 @@
     <string name="your_nick_has_been_changed">Вашият псевдоним е променен</string>
     <string name="send_unencrypted">Изпрати нешифровано съобщение</string>
     <string name="decryption_failed">Дешифрирането не бе успешно. Може би нямате правилния личен ключ.</string>
+    <string name="openkeychain_required">OpenKeychain</string>
     <string name="openkeychain_required_long">Pix-Art Messenger използва приложение, наречено <b> OpenKeychain </b>, за криптиране и декриптиране на съобщения и за управление на вашите публични ключове. n <small> (След това рестартирайте Pix-Art Messenger.) </small></string>
     <string name="restart">Рестартирай </string>
     <string name="install">Инсталирай</string>
@@ -143,6 +145,9 @@
     <string name="account_status_incompatible_server">Несъвместим сървър</string>
     <string name="account_status_stream_error">Грешка в потока</string>
     <string name="encryption_choice_unencrypted">Нешифровано</string>
+    <string name="encryption_choice_otr">OTR</string>
+    <string name="encryption_choice_pgp">OpenPGP</string>
+    <string name="encryption_choice_omemo">OMEMO</string>
     <string name="action_account">Редактиране на профил</string>
     <string name="mgmt_account_delete">Изтриване на профил</string>
     <string name="mgmt_account_publish_avatar">Публикувайте снимка</string>
@@ -153,12 +158,14 @@
     <string name="mgmt_account_are_you_sure">Сигурен ли си?</string>
     <string name="mgmt_account_delete_confirm_message">Ако изтриете профила си, цялата история на локалните ви разговори ще бъде загубена.\n\nАко изтриете акаунта си от сървъра, целият ви акаунт ще бъде изтрит и от сървъра, няма да можете да влизате повече, докато не регистрирате нов профил. ,</string>
     <string name="attach_record_voice">Запис на глас</string>
+    <string name="account_settings_jabber_id">Jabber-ID</string>
     <string name="account_settings_example_jabber_id">потребителско име@име на сървърa.com</string>
     <string name="password">Парола</string>
     <string name="invalid_jid">Това не е валиден Jabber-ID</string>
     <string name="error_out_of_memory">Недостиг на памет. Снимката е твърде голема</string>
     <string name="add_phone_book_text">Искате ли да добавите%s към адресната си книга?</string>
     <string name="server_info_show_more">Информация за сървъра</string>
+    <string name="server_info_mam">XEP-0313: MAM</string>
     <string name="server_info_carbon_messages">XEP-0280: Carbon Messages</string>
     <string name="server_info_csi">XEP-0352: Индикация на Състоянието на Клиента</string>
     <string name="server_info_blocking">XEP-0191: Команда за Блокиране</string>
@@ -166,6 +173,7 @@
     <string name="server_info_stream_management">XEP-0198: Управление на Потока</string>
     <string name="server_info_pep">XEP-0163: PEP (Снимки / OMEMO)</string>
     <string name="server_info_http_upload">XEP-0363: HTTP Качване на файл</string>
+    <string name="server_info_push">XEP-0357: Push</string>
     <string name="server_info_available">да</string>
     <string name="server_info_unavailable">не</string>
     <string name="missing_public_keys">Липсват съобщения за публичен ключ</string>
@@ -190,6 +198,7 @@
     <string name="other_devices">Други устройства</string>
     <string name="trust_omemo_fingerprints">Доверете се на Пръстовите Отпечатъци на OMEMO</string>
     <string name="fetching_keys">Извличане на ключове…</string>
+    <string name="done">Добре</string>
     <string name="verify">Потвърждаване</string>
     <string name="decrypt">Разкодирай</string>
     <string name="bookmarks">Многократни потребителски разговори</string>
@@ -203,6 +212,8 @@
     <string name="select">Избери</string>
     <string name="contact_already_exists">Контактът вече съществува</string>
     <string name="join">Влезни в</string>
+    <string name="channel_full_jid_example">channel@conference.example.com/nick</string>
+    <string name="channel_bare_jid_example">channel@conference.example.com</string>
     <string name="save_as_bookmark">Запази в бележника</string>
     <string name="delete_bookmark">Изтрий от бележника </string>
     <string name="bookmark_already_exists">Това нещо в бележника вече съществува</string>
