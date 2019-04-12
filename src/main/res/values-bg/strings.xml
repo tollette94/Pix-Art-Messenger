@@ -587,6 +587,7 @@
     <string name="share_as_barcode">Сподели като QR код</string>
     <string name="share_as_uri">Сподели като XMPP URI</string>
     <string name="share_as_http">Сподели като HTTP адрез</string>
+    <string name="blindly_trusted_omemo_keys">Слепо доверие на OMEMO ключове</string>
     <string name="pref_blind_trust_before_verification">Сляп Доверие Преди Проверка</string>
     <string name="pref_blind_trust_before_verification_summary">Автоматично се доверявайте на всички нови устройства от контакти, които не са били проверени преди.</string>
     <string name="not_trusted">Неверващ</string>
@@ -662,6 +663,8 @@
     <string name="account_status_regis_web">Сървърът изисква регистрация в уебсайта</string>
     <string name="application_found_to_open_website">Не е намерено програма за отваряне на уебсайт</string>
     <string name="open_website">Отвори интернет адрес \"website\"</string>
+    <string name="pref_headsup_notifications">Важни Известия</string>
+    <string name="pref_headsup_notifications_summary">Покажи Важните Известия</string>
     <string name="yesterday">Вчера</string>
     <string name="pref_validate_hostname">Потвърди името на интернет адреса \"хост\" с DNSSEC</string>
     <string name="pref_validate_hostname_summary">Сървърните сертификати, които съдържат потвърденото име на хост, се считат за проверени</string>
@@ -684,6 +687,7 @@
     <string name="pref_use_bundled_emoji">Използвай интегрирани емотикони</string>
     <string name="pref_use_bundled_emoji_summary">Използвай интегрираната емотиконна библиотека, вместо да използваш от  устройстото ми. Промените ще бъдат достъпни след повторно отваряне на програмата.</string>
     <string name="invalid_muc_nick">Невалиден псевдоним</string>
+    <string name="title_activity_share_via_account">Сподели през профила</string>
     <string name="destroy_room">Унищожете груповия разговор</string>
     <string name="conference_unknown_error">Вече не си в този групов чат</string>
     <string name="destroy_room_dialog">Искаш ли да унищожиш груповия чат %s? Това ще премахне завинаги този групов разговор.</string>
@@ -747,6 +751,7 @@
     <string name="p1_s3_filetransfer">HTTP Споделяне на Файлове за S3</string>
     <string name="pref_start_search">Директно Търсене</string>
     <string name="pref_start_search_summary">На екрана ‘Стартиране на разговор’ отворете клавиатурата и поставете курсора в полето за търсене</string>
+    <string name="paste_as_quote">Постави като цитат</string>
     <string name="group_chat_avatar">Снимка за групов чат</string>
     <string name="host_does_not_support_group_chat_avatars">Сървъра не поддържа аватари</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Само собственикът може да промени снимката</string>
