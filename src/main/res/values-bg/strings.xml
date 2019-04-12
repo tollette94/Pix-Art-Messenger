@@ -232,6 +232,7 @@
     <string name="error_publish_avatar_no_server_support">Вашият сървър не поддържа публикуването на снимки</string>
     <string name="private_message_to">до %s</string>
     <string name="send_private_message_to">Изпрати лично съобщение до% s</string>
+    <string name="connect">Свържи</string>
     <string name="account_already_exists">Този профил вече съществува</string>
     <string name="next">Следващия</string>
     <string name="server_info_session_established">Текуща осъществена</string>
@@ -291,6 +292,7 @@
     <string name="shared_secret_hint">Съвет или Въпрос</string>
     <string name="shared_secret_secret">Споделена Тайна</string>
     <string name="confirm">Потвърдви</string>
+    <string name="in_progress">В процес</string>
     <string name="respond">Oтговори</string>
     <string name="failed">Провали се</string>
     <string name="secrets_do_not_match">Тайните не съвпадат</string>
@@ -313,6 +315,7 @@
     <string name="open_x_file">Отвори %s</string>
     <string name="sending_file">изпращане (%1$d%% завършено)</string>
     <string name="preparing_file">Подготвя файла за изпращане</string>
+    <string name="x_file_offered_for_download">%s, предлага да изтеглите</string>
     <string name="cancel_transmission">Прекъсване на предаването</string>
     <string name="file_transmission_failed">предаването на файлове е неуспешно</string>
     <string name="file_deleted">Файлът е изтрит</string>
@@ -327,6 +330,7 @@
     <string name="account_image_description">Снимка на профила</string>
     <string name="copy_otr_clipboard_description">Копирайте OTR пръстовия отпечатък в клипборда</string>
     <string name="copy_omemo_clipboard_description">Копирайте OMEMO пръстовия отпечатък в клипборда</string>
+    <string name="regenerate_omemo_key">Регенерирайте OMEMO ключ</string>
     <string name="clear_other_devices">Чистене на устройствата</string>
     <string name="clear_other_devices_desc">Сигурни ли сте, че искате да изчистите всички други устройства от OMEMO съобщението? Следващия път, когато устройствата се свържат, те ще се изкажат отново, но може да не получат съобщения, изпратени междувременно.</string>
     <string name="distrust_omemo_key">Недоверие на устройството</string>
