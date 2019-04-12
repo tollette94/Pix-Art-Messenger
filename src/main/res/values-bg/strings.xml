@@ -346,6 +346,7 @@
     <string name="ask_question">Задай въпрос</string>
     <string name="smp_explain_question">Ако вие и вашият контакт имате обща тайна, която никой друг не знае (като вътрешна шега или просто това, което сте имали за обяд последния път, когато се срещнахте), можете да използвате тази тайна, за да проверите взаимните си отпечатъци..\n\nВие предоставяте намек или въпрос за вашия контакт, който ще отговори с чувствителен към регистър отговор.</string>
     <string name="smp_explain_answer">Контактът ви би искал да потвърди пръстовия ви отпечатък, като ви оспори споделена тайна. Вашият контакт предостави следния намек или въпрос за тази тайна.</string>
+    <string name="shared_secret_hint_should_not_be_empty">Предложението ти не трябва да е празно</string>
     <string name="shared_secret_can_not_be_empty">Споделената ви тайна не може да бъде празна</string>
     <string name="manual_verification_explanation">Внимателно сравнете показания по-долу пръстов отпечатък с пръстовия отпечатък на вашия контакт.\nМожете да използвате всяка доверена форма на комуникация като криптирана електронна поща или телефонно обаждане, за да ги замените.</string>
     <string name="change_password">Промяна на паролата</string>
@@ -379,6 +380,9 @@
     <string name="never">Никога</string>
     <string name="until_further_notice">До второ нареждане</string>
     <string name="pref_input_options">Вход</string>
+    <string name="pref_enter_is_send">Бутон Enter за изпращане</string>
+    <string name="pref_enter_is_send_summary">Използвай клавиша Enter, за да изпратиш съобщение</string>
+    <string name="pref_display_enter_key">Покажи клавиша Enter за въвеждане</string>
     <string name="audio">звук</string>
     <string name="video">видео</string>
     <string name="image">снимка</string>
@@ -404,6 +408,10 @@
     <string name="dialog_manage_certs_title">Премахни сертификати </string>
     <string name="dialog_manage_certs_positivebutton">Изтрий избраните</string>
     <string name="dialog_manage_certs_negativebutton">Отказ</string>
+    <plurals name="toast_delete_certificates">
+        <item quantity="one">%d сертификат е изтрит</item>
+        <item quantity="other">Изтрити са %d сертификата</item>
+    </plurals>
     <string name="pref_quick_action_summary">Смяни бутона за изпращане с бързо действие</string>
     <string name="pref_quick_action">Бързо Действие</string>
     <string name="none">Никой</string>
@@ -439,6 +447,7 @@
     <string name="pref_dnd_on_silent_mode_summary">Маркира вашия ресурс като \"Не безпокойте\", когато устройството е в безшумен режим</string>
     <string name="pref_treat_vibrate_as_silent">Третирайте вибрацията като безшумен режим</string>
     <string name="pref_treat_vibrate_as_dnd_summary">Маркира вашия ресурс като \"Не ме безпокойте\", когато устройството е на вибрaция</string>
+    <string name="hostname_example">xmpp.pix-art.de</string>
     <string name="action_add_account_with_certificate">Добавете акаунт със сертификат</string>
     <string name="unable_to_parse_certificate">Сертификатът не може да се анализира</string>
     <string name="authenticate_with_certificate">Оставете празно, за да удостоверите w/ сертификата</string>
@@ -507,6 +516,7 @@
     <string name="pick_your_username">Изберете потребителското си име</string>
     <string name="pref_manually_change_presence">Управлявайте наличността ръчно</string>
     <string name="pref_manually_change_presence_summary">Задайте своята наличност при редактиране на съобщението за състоянието.</string>
+    <string name="status_message">Съобщение за състояние</string>
     <string name="presence_chat">Свободен за Писане \"Chat\"</string>
     <string name="presence_online">На линия</string>
     <string name="presence_away">Отсъстващ</string>
