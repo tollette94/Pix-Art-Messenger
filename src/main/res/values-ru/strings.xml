@@ -498,8 +498,8 @@
     <string name="no">Нет</string>
     <string name="no_accounts">(Нет активных аккаунтов)</string>
     <string name="this_field_is_required">Это обязательное поле</string>
-    <string name="correct_message">Верное сообщение</string>
-    <string name="send_corrected_message">Отправить верное сообщение</string>
+    <string name="correct_message">Изменить сообщение</string>
+    <string name="send_corrected_message">Отправить измененное сообщение</string>
     <string name="no_keys_just_confirm">Вы уже доверяете этому контакту. Нажимая \"Готово\" вы только подтвердите, что %s состоит в групповом чате.</string>
     <string name="contacts_have_no_pgp_keys">Pix-Art Messenger не может зашифровать ваши сообщения, поскольку ваши контакты не предоставляют своих публичных ключей.\n\n</string>
     <string name="this_account_is_disabled">Вы отключили данный аккаунт</string>
