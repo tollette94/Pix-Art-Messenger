@@ -1,43 +1,42 @@
+# Java Gradle CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-java/ for more details
+#
 version: 2
 jobs:
-  test:
-    docker:
-      - image: registry.gitlab.com/fdroid/ci-images-client:latest
-    steps:
-      - checkout
-      - restore_cache:
-          key: gradle-{{ checksum "build.gradle" }}-{{ checksum ".circleci/config.yml" }}
-      - run: export GRADLE_USER_HOME=$PWD/.gradle
-      - run: echo y | sdkmanager "platforms;android-$(sed -n 's,.*compileSdkVersion\s*\([0-9][0-9]*\).*,\1,p' build.gradle)" > /dev/null
-      - run: ./gradlew lintStandardDebug
-      - save_cache:
-          paths:
-            - .gradle/caches
-            - .gradle/wrapper
-          key: gradle-{{ checksum "build.gradle" }}-{{ checksum ".circleci/config.yml" }}
-      - store_artifacts:
-          path: build/outputs/apk/standard
-          destination: apk
   build:
     docker:
-      - image: registry.gitlab.com/fdroid/ci-images-client:latest
+      # specify the version you desire here
+      - image: circleci/openjdk:8-jdk
+
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/postgres:9.4
+
+    working_directory: ~/repo
+
+    environment:
+      # Customize the JVM maximum heap limit
+      JVM_OPTS: -Xmx3200m
+      TERM: dumb
+
     steps:
       - checkout
+
+      # Download and cache dependencies
       - restore_cache:
-          key: android
-      - run: export GRADLE_USER_HOME=$PWD/.gradle
-      - run: echo y | sdkmanager "platforms;android-$(sed -n 's,.*compileSdkVersion\s*\([0-9][0-9]*\).*,\1,p' build.gradle)" > /dev/null
-      - run: ./gradlew assembleStandard
+          keys:
+            - v1-dependencies-{{ checksum "build.gradle" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+
+      - run: gradle dependencies
+
       - save_cache:
           paths:
-            - ~/.android
-          key: android
-      - store_artifacts:
-          path: build/outputs/apk/standard
-          destination: apk
+            - ~/.gradle
+          key: v1-dependencies-{{ checksum "build.gradle" }}
 
-workflows:
-  version: 2
-  build_test:
-    jobs:
-    - build
+      # run tests!
+      - run: gradle test
